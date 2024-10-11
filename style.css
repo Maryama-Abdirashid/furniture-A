@@ -1,0 +1,201 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* section-A start */
+.section-A {
+    background: linear-gradient(to left, #00c853, white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: linear-gradient(to left, #00c853, white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.logo span {
+    color: #00c853;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#Home {
+    color: white;
+}
+
+li a:hover {
+    color: white;
+}
+
+.login {
+    font-size: 24px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Hero section */
+.mxa {
+    position: absolute;
+    top: 100px;
+    margin-top: 100px;
+    margin-left: 20px;
+
+}
+
+.intro {
+    flex: 1;
+}
+
+h1 {
+    color: #00c853;
+    font-size: 36px;
+}
+
+h1 span {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.read, .contact {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.read {
+    background-color: #00c853;
+    color: white;
+}
+
+.read:hover {
+    background-color: #23fc67;
+}
+
+.contact {
+    background-color: white;
+    color: #00c853;
+}
+
+.contact:hover {
+    background-color: aliceblue;
+}
+
+.p8 {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 500px;
+    height: 300px;
+
+}
+
+/* section-A end */
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mxa {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .p8 {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .mxa {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .read, .contact {
+        padding: 10px 20px;
+    }
+
+    .p8 {
+        width: 90%;
+    }
+}
